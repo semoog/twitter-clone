@@ -19,6 +19,18 @@ body {
 	font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
+body a {
+	text-decoration: none;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	color: #1A1B1F;
+	font: inherit;
+	font-size:100%;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 /* GLOBAL ELEMENTS */
 .avatar {
 	width: 32px;
@@ -97,7 +109,7 @@ body {
 	}
 		#profile-summary .avatar {
 			position: absolute;
-			top: 0;.twe
+			top: 0;
 			left: 0;
 		}
 		#profile-summary .content {
@@ -127,8 +139,19 @@ body {
 		margin-bottom: 1em;
 		box-sizing: border-box;
 	}
+	.tweet-compose-reply {
+		width: 100%;
+		height: 2.5em;
+		font-size: 13px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin-bottom: 1em;
+		box-sizing: border-box;
+	}
 		#tweet-controls {
 			text-align: right;
+			display: none;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -146,6 +169,8 @@ body {
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 60px;
 	border-radius: 6px;
+	display: none;
+	cursor: default;
 }
 
 	.tweet .avatar {
@@ -159,6 +184,10 @@ body {
 		font-size: 12px;
 		color: #999;
 	}
+	.tweet .upperTime {
+		font-size: 12px;
+		color: #999;
+	}
 	.tweet-text {
 		font-size: 14px;
 		color: #333;
@@ -167,6 +196,7 @@ body {
 	}
 
 	.tweet-actions {
+		visibility: hidden;
 		text-align: right;
 	}
 		.tweet-actions ul {
@@ -209,6 +239,7 @@ body {
 	}
 
 	.stats {
+		display: none;
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
 	}
@@ -249,6 +280,7 @@ body {
 		}
 
 		.reply {
+			display: none;
 			position: relative;
 			clear: both;
 			padding-left: 43px;
@@ -258,5 +290,3 @@ body {
 				top: 0;
 				left: 0;
 			}
-
-
