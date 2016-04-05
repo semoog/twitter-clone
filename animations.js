@@ -12,6 +12,7 @@ var profilePic = "alagoon";
 var newTweet;
 var tweetText;
 
+
 // SHOW / HIDE TWEET CONTROLS WHEN IN FOCUS
 var buttonClicked = false;
 
